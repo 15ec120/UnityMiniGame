@@ -4,7 +4,7 @@ using System.Collections;
 public class PlayerController : MonoBehaviour
 {
     // speedを制御する
-    public float speed = 20;
+    public float speed = 10;
 
     void FixedUpdate()
     {
@@ -13,7 +13,7 @@ public class PlayerController : MonoBehaviour
 
         Rigidbody rigidbody = GetComponent<Rigidbody>();
 
-        // xとyにspeedを掛ける
+        // xとzにspeedを掛ける
         rigidbody.AddForce(x * speed, 0, z * speed);
     }
 }
