@@ -7,6 +7,7 @@ TagManager:
   - Cube
   - Capsule
   - WP1
+  - KeyDoor
   layers:
   - Default
   - TransparentFX

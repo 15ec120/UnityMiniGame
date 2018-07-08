@@ -8,3 +8,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/MiniTest.unity
     guid: 39868b37c46306949a302561caf8ed5b
+  - enabled: 1
+    path: Assets/Stage_hase.unity
+    guid: a888b5499fc7fa14cac2a6a1931d01f3
+  m_configObjects: {}
