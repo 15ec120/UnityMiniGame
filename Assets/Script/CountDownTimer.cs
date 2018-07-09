@@ -4,7 +4,6 @@ using UnityEngine.UI;
 
 public class CountDownTimer : MonoBehaviour
 {
-
     //　トータル制限時間
     public float totalTime;
     //　制限時間（分）
@@ -52,5 +51,5 @@ public class CountDownTimer : MonoBehaviour
             Debug.Log("制限時間終了");
         }
     }
-  
+ 
 }

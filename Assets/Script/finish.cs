@@ -13,7 +13,7 @@ public class finish : MonoBehaviour
     // ゲームクリア
     public bool gameClear = false;
     //
-    public float sceneDelay = 10.0f;
+    public float sceneDelay = 0.0f;
 
     void Update()
     {
@@ -22,7 +22,7 @@ public class finish : MonoBehaviour
         {
 
             winnerLabelObject.SetActive(true);
-
+            Time.timeScale = 0;
             sceneDelay -= Time.deltaTime;
             if (sceneDelay <= 0.0f)
             {
