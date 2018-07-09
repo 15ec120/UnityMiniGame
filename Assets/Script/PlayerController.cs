@@ -3,26 +3,22 @@ using System.Collections;
 
 public class PlayerController : MonoBehaviour
 {
-<<<<<<< HEAD
-=======
-    // speedを制御する
-    public float speed = 10;
->>>>>>> 15ec097
 
-    float speed = 60.0f;
+    public float speed = 10;
+
+
 
     void Update()
     {
-        
-        float x = Input.acceleration.x;
-        float z = Input.acceleration.y;
-        
+
+        float x = Input.GetAxis("Horizontal");
+        float z = Input.GetAxis("Vertical");
+
         Rigidbody rigidbody = GetComponent<Rigidbody>();
 
-<<<<<<< HEAD
-=======
+
         // xとzにspeedを掛ける
->>>>>>> 15ec097
+
         rigidbody.AddForce(x * speed, 0, z * speed);
     }
 }
