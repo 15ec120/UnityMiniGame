@@ -3,6 +3,11 @@ using System.Collections;
 
 public class PlayerController : MonoBehaviour
 {
+<<<<<<< HEAD
+=======
+    // speedを制御する
+    public float speed = 10;
+>>>>>>> 15ec097
 
     float speed = 60.0f;
 
@@ -14,6 +19,10 @@ public class PlayerController : MonoBehaviour
         
         Rigidbody rigidbody = GetComponent<Rigidbody>();
 
+<<<<<<< HEAD
+=======
+        // xとzにspeedを掛ける
+>>>>>>> 15ec097
         rigidbody.AddForce(x * speed, 0, z * speed);
     }
 }
