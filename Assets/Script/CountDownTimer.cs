@@ -6,7 +6,7 @@ public class CountDownTimer : MonoBehaviour
 {
 
     //　トータル制限時間
-    private float totalTime;
+    public float totalTime;
     //　制限時間（分）
     [SerializeField]
     private int minute;
@@ -27,7 +27,8 @@ public class CountDownTimer : MonoBehaviour
     void Update()
     {
         //　制限時間が0秒以下なら何もしない
-        if (totalTime <= 0f)
+       
+            if (totalTime <= 0f)
         {
             return;
         }
@@ -51,4 +52,5 @@ public class CountDownTimer : MonoBehaviour
             Debug.Log("制限時間終了");
         }
     }
+  
 }

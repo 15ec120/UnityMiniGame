@@ -6,6 +6,8 @@ public class GameController : MonoBehaviour {
 
     int score = 0;
     public UnityEngine.UI.Text scoreLabel;
+    public GameObject winnerLabelObject;
+
 
     private void OnTriggerEnter(Collider hit){
         //Cubeに触れると100点追加
