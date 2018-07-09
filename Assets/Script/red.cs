@@ -18,7 +18,7 @@ public class red : MonoBehaviour
 
         if (Input.GetMouseButtonDown(0))
         {
-            SceneManager.LoadScene("hara");
+            SceneManager.LoadScene("Minigame");
         }
     }
 }
