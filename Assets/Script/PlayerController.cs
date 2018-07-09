@@ -4,15 +4,20 @@ using System.Collections;
 public class PlayerController : MonoBehaviour
 {
 
-    float speed = 60.0f;
+    public float speed = 10;
+
+
 
     void Update()
     {
-        
-        float x = Input.acceleration.x;
-        float z = Input.acceleration.y;
-        
+
+        float x = Input.GetAxis("Horizontal");
+        float z = Input.GetAxis("Vertical");
+
         Rigidbody rigidbody = GetComponent<Rigidbody>();
+
+
+        // xとzにspeedを掛ける
 
         rigidbody.AddForce(x * speed, 0, z * speed);
     }
